@@ -1,3 +1,11 @@
 $(document).ready(function() {
-  $("#blanks form").submit(function(event) {
-    var blanks = ["person1", "person2", "animal", "exclamation", "verb", "noun"];
+  $("form#transportation_survey").submit(function(event){
+     event.preventDefault();
+     $("#work-responses").show();
+     $("input:checkbox[name=work-transportation]:checked").each(function(){
+       var workTransportationMode = $(this).val();
+       $('#work-responses').append(workTransportationMode + "<br>");
+     });
+     $('#transportation_survey').hide();
+   });
+ });
