@@ -5,13 +5,16 @@ $(document).ready(function() {
      $("input:checkbox[name=work-transportation]:checked").each(function(){
        var workTransportationMode = $(this).val();
        $('#work-responses').append(workTransportationMode + "<br>");
+     });
+     $("#fun-responses").show();
+     $("input:checkbox[name=fun-transportation]:checked").each(function(){
+       var funTransportationMode = $(this).val();
        $('#fun-responses').append(funTransportationMode + "<br>");
      });
-     var userResponses = [];
      $("input:checkbox[name=work-transportation]:checked").each(function(){
-       var workTransportationMode = $(this).val();
-       userResponses.push(workTransportationMode);
-     });
-     $('#transportation_survey').hide();
+        var workTransportationMode = $(this).val();
+        var capitalWorkTransportationMode = workTransportationMode.toUpperCase();
+      });
+     $('#transportation_survey').hide();     
    });
  });

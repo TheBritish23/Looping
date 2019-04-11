@@ -5,3 +5,8 @@
 #fun-responses {
   display: none;
 }
+
+h1 {
+  font-style: italic;
+  color: red;
+}
