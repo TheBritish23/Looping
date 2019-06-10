@@ -7,12 +7,13 @@
 }
 
 h1 {
-  font-style: italic;
+  font-family: 'Londrina Outline', cursive;
+  font-weight: bold;
   color: red;
 }
 
 .button {
-  background-color: red;
+  background-color: blue;
   border: none;
   color: white;
   padding: 20px;
@@ -20,6 +21,7 @@ h1 {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  font-weight: bold;
   margin: 4px 2px;
 }
 

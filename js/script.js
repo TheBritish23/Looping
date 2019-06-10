@@ -1,8 +1,8 @@
 $(document).ready(function() {
-  $("form#transportation_survey").submit(function(event){
+  $("form#stress_test").submit(function(event){
      event.preventDefault();
-     $("#work-responses").show();
-     $("input:checkbox[name=work-transportation]:checked").each(function(){
+     $("#life").show();
+     $("input:checkbox[name=life]:checked").each(function(){
        var workTransportationMode = $(this).val();
        $('#work-responses').append(workTransportationMode + "<br>");
      });
@@ -15,6 +15,6 @@ $(document).ready(function() {
         var workTransportationMode = $(this).val();
         var capitalWorkTransportationMode = workTransportationMode.toUpperCase();
       });
-     $('#transportation_survey').hide();     
+     $('#stress_test').hide();
    });
  });
